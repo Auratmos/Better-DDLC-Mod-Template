@@ -37,9 +37,8 @@ define config.main_menu_music = audio.t1
 define config.enter_transition = Dissolve(.2)
 define config.exit_transition = Dissolve(.2)
 
-
-
-
+# This defines what transition to use when loading a save file.
+# By default, this is None.
 define config.after_load_transition = None
 
 # This defines what transition to use to go to the main menu after a return action is called.
