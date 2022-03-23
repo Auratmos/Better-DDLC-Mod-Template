@@ -2,14 +2,15 @@
 # This file is for defining basic information about your mod.
 
 # This defines the name of the mod.
-# You should replace "Doki Doki Literature Club!" with the name of your mod.
-define config.name = "Doki Doki Literature Club!"
+# Replace the string below with the name of your mod.
+define config.name = "DDLC Mod"
 
 # This determines whether or not the mod name should be shown on the main menu.
 # By default, this is True.
+# It's best to keep this on to prevent confusion between the vanilla game and your mod.
 define gui.show_name = True
 
-# This defines the version number.
+# This defines the version number string.
 # You should use Semver Versioning to version your mod.
 # https://semver.org
 define config.version = "1.0.0"
@@ -20,7 +21,9 @@ define gui.about = _("")
 
 # This defines the build name of your mod.
 # This is used for internally naming distributions of your mod.
-define build.name = "DDLC"
+# The string MUST be ASCII, so no spaces, colons, or semicolons.
+# Replace the string below with the build name of your mod.
+define build.name = "DDLC-Mod"
 
 # These determine whether the sound, music and voice sliders should be visible in the game's Settings menu or not.
 # By default, these are...
@@ -45,26 +48,13 @@ define config.after_load_transition = None
 # By default, this is Dissolve(.5).
 define config.end_game_transition = Dissolve(.5)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# This defines the behavior of the textbox's appearance.
+# By default, this is "auto", meaning the textbox will only appear while dialogue is displayed.
+# This can be changed in-game with window show, window hide, and window auto.
 define config.window = "auto"
 
-
-
-
+# This defines what the transition to use in showing and hiding the textbox.
+# By default, these are Dissolve(.2).
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
 
@@ -73,40 +63,23 @@ define config.window_hide_transition = Dissolve(.2)
 # By default, this is 50.
 default preferences.text_cps = 50
 
-
-
-
-
+# This defines the default time (in seconds) to wait before jumping to the next line while Auto-Forward mode is enabled.
+# By default, this is 15 (seconds).
 default preferences.afm_time = 15
 
+# These defines the default volume of music and sound on a scale of 0 to 1.
+# By default, these are 0.75.
 default preferences.music_volume = 0.75
 default preferences.sfx_volume = 0.75
 
+# This defines the name of the folder to put save data in.
+# Replace the string below with the name of the folder for your mod's save data.
+# Be sure to keep the name within allowed lengths and character parameters for Windows, macOS and Linux.
+define config.save_directory = "DDLC Mod"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-define config.save_directory = "DDLC-1454445547"
-
-
-
-
-
-
-
+# This defines where the icon for your game's window is located in your game directory.
+# By default, this is "gui/window_icon.png". However, this location is inaccessible normally due to Team Salvato's choice to keep the game closed-source, so you should replace this with the location of a custom logo.
 define config.window_icon = "gui/window_icon.png"
-
 
 
 define config.allow_skipping = True
