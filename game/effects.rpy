@@ -397,4 +397,3 @@ image veins:
         choice:
             xoffset -2
         repeat
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

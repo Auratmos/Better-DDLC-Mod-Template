@@ -195,4 +195,3 @@ init python:
 
 
 define build.itch_project = "teamsalvato/ddlc"
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

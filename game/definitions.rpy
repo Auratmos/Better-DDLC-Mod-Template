@@ -13,6 +13,11 @@ define persistent.steam = ("steamapps" in config.basedir.lower())
 # By default, this is "auto", meaning that Developer Mode is only enabled when the game is running through the Ren'Py launcher.
 define config.developer = "auto"
 
+# This determines whether or not Developer Mode's autoreload feature is enabled.
+# By default, this is True.
+# If you are using Visual Studio Code with Auto Save enabled, I suggest setting this to False.
+define config.autoreload = True
+
 # This is an early Python block.
 # This specific block is used for importing the singleton library.
 # Singleton is used to keep only one instance of DDLC running.
@@ -1409,4 +1414,3 @@ default sayori_confess = True
 
 
 default natsuki_23 = None
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
