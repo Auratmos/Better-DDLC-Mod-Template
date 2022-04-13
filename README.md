@@ -17,4 +17,4 @@ An installation guide is available on the [wiki](https://github.com/Auratmos/Bet
 [DDLC Modding Reddit Community](https://www.reddit.com/r/DDLCMods/)
 
 ---
-!(heart.png)
+![](heart.png)
