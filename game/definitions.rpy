@@ -39,17 +39,26 @@ init python:
 
     # This defines the music_poem audio channel, which plays character-specific music for when a poem is playing.
     renpy.music.register_channel("music_poem", mixer="music", tight=True)
+
+    # These define the Python functions.
+    # This defines the function to get the currect time of the playing background song.
     def get_pos(channel='music'):
         pos = renpy.music.get_pos(channel=channel)
         if pos: return pos
         return 0
+
+    # This defines the function to delete all save files.
     def delete_all_saves():
         for savegame in renpy.list_saved_games(fast=True):
             renpy.unlink_save(savegame)
+
+    # This defines the function to delete a character file.
     def delete_character(name):
         import os
         try: os.remove(config.basedir + "/characters/" + name + ".chr")
         except: pass
+
+    # This defines the function to restore all character files.
     def restore_all_characters():
         try: renpy.file("../characters/monika.chr")
         except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
@@ -59,6 +68,8 @@ init python:
         except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
         try: renpy.file("../characters/sayori.chr")
         except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
+
+    # This defines the function to restore the relevant characters of an act.
     def restore_relevant_characters():
         restore_all_characters()
         if persistent.playthrough == 1 or persistent.playthrough == 2:
@@ -69,6 +80,9 @@ init python:
             delete_character("yuri")
         elif persistent.playthrough == 4:
             delete_character("monika")
+
+    # This defines the function to make a pause.
+    # This function is recommended over the built-in Ren'Py function.
     def pause(time=None):
         global _windows_hidden
         if not time:
@@ -83,9 +97,7 @@ init python:
         _windows_hidden = False
 
 
-
-
-
+# These define the audio definitions, such as music and sounds.
 define audio.t1 = "<loop 22.073>bgm/1.ogg"
 define audio.t2 = "<loop 4.499>bgm/2.ogg"
 define audio.t2g = "bgm/2g.ogg"
