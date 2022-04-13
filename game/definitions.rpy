@@ -3,6 +3,7 @@
 
 # This determines whether or not Demo Mode is enabled.
 # It is not used anywhere as it was (supposedly) used for playtesting.
+# Unless you're playtesting, it's best to keep this as False.
 define persistent.demo = False
 
 # This determines whether or not the game is running through a copy from Steam.
@@ -29,12 +30,14 @@ python early:
 # This specific block is used for defining the keymap, functions, and the "music_poem" audio channel.
 init python:
     
-    # These define
+    # These define the keybinds.
     config.keymap['game_menu'].remove('mouseup_3')
     config.keymap['hide_windows'].append('mouseup_3')
     config.keymap['self_voicing'] = []
     config.keymap['clipboard_voicing'] = []
     config.keymap['toggle_skip'] = []
+
+    # This defines the music_poem audio channel, which plays character-specific music for when a poem is playing.
     renpy.music.register_channel("music_poem", mixer="music", tight=True)
     def get_pos(channel='music'):
         pos = renpy.music.get_pos(channel=channel)
