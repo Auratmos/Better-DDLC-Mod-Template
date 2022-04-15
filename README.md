@@ -17,5 +17,5 @@ An installation guide is available on the [wiki](https://github.com/Auratmos/Bet
 ## Additional Resources
 [Team Salvato's IP Guidelines](http://teamsalvato.com/ip-guidelines/) - **You must follow these guidelines in the making and reproduction of your mod!**\
 [Ren'Py Documentation](https://renpy.org/doc/html/) (may not be accurate to Ren'Py 6.99.12)\
-[BDDLCMT Additions](https://github.com/Auratmos/BDDLCMT-Additions)
+[BDDLCMT Additions](https://github.com/Auratmos/BDDLCMT-Additions)\
 [DDLC Modding Reddit Community](https://www.reddit.com/r/DDLCMods/)
