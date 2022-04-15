@@ -98,62 +98,62 @@ init python:
 
 
 # These define the audio definitions, such as music and sounds.
-define audio.t1 = "<loop 22.073>bgm/1.ogg"
-define audio.t2 = "<loop 4.499>bgm/2.ogg"
-define audio.t2g = "bgm/2g.ogg"
-define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg"
-define audio.t2g3 = "<loop 4.492>bgm/2g2.ogg"
-define audio.t3 = "<loop 4.618>bgm/3.ogg"
-define audio.t3g = "<to 15.255>bgm/3g.ogg"
+define audio.t1 = "<loop 22.073>bgm/1.ogg" # t1 - Doki Doki Literature Club!
+define audio.t2 = "<loop 4.499>bgm/2.ogg" # t2 - Ohayou Sayori!
+define audio.t2g = "bgm/2g.ogg" # t2g - Ohayou Sayori! (first four seconds, pitch and speed glitched)
+define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg" # t2g2 - Ohayou Sayori! (used for playing after t2g, for seamless transition into normal music)
+define audio.t2g3 = "<loop 4.492>bgm/2g2.ogg" # t2g3 - Ohayou Sayori! (pitch and speed slowing rising)
+define audio.t3 = "<loop 4.618>bgm/3.ogg" # t3 - Main Theme
+define audio.t3g = "<to 15.255>bgm/3g.ogg" # t3g - Main Theme (first 15.255 seconds, glitched notes)
 define audio.t3g2 = "<from 15.255 loop 4.618>bgm/3.ogg"
-define audio.t3g3 = "<loop 4.618>bgm/3g2.ogg"
-define audio.t3m = "<loop 4.618>bgm/3.ogg"
-define audio.t4 = "<loop 19.451>bgm/4.ogg"
-define audio.t4g = "<loop 1.000>bgm/4g.ogg"
-define audio.t5 = "<loop 4.444>bgm/5.ogg"
-define audio.t5b = "<loop 4.444>bgm/5.ogg"
-define audio.t5c = "<loop 4.444>bgm/5.ogg"
-define audio.t6 = "<loop 10.893>bgm/6.ogg"
-define audio.t6g = "<loop 10.893>bgm/6g.ogg"
-define audio.t6r = "<to 39.817 loop 0>bgm/6r.ogg"
-define audio.t6s = "<loop 43.572>bgm/6s.ogg"
-define audio.t7 = "<loop 2.291>bgm/7.ogg"
-define audio.t7a = "<loop 4.316 to 12.453>bgm/7.ogg"
-define audio.t7g = "<loop 31.880>bgm/7g.ogg"
-define audio.t8 = "<loop 9.938>bgm/8.ogg"
-define audio.t9 = "<loop 3.172>bgm/9.ogg"
-define audio.t9g = "<loop 1.532>bgm/9g.ogg"
-define audio.t10 = "<loop 5.861>bgm/10.ogg"
-define audio.t10y = "<loop 0>bgm/10-yuri.ogg"
-define audio.td = "<loop 36.782>bgm/d.ogg"
+define audio.t3g3 = "<loop 4.618>bgm/3g2.ogg" # t3g3 - Main Theme (muffled, weird slimy bodily-fluid-like noises)
+define audio.t3m = "<loop 4.618>bgm/3.ogg" # Unknown, please add issue on GitHub.
+define audio.t4 = "<loop 19.451>bgm/4.ogg" # t4 - Dreams of Love and Literature
+define audio.t4g = "<loop 1.000>bgm/4g.ogg" # t4g - Poem game theme, glitched during act 2.
+define audio.t5 = "<loop 4.444>bgm/5.ogg" # t5 - Okay, Everyone!
+define audio.t5b = "<loop 4.444>bgm/5.ogg" # Unknown, please add issue on GitHub.
+define audio.t5c = "<loop 4.444>bgm/5.ogg" # Unknown, please add issue on GitHub.
+define audio.t6 = "<loop 10.893>bgm/6.ogg" # t6 - Play With Me
+define audio.t6g = "<loop 10.893>bgm/6g.ogg" # t6g - Play With Me (glitched)
+define audio.t6r = "<to 39.817 loop 0>bgm/6r.ogg" # t6r - Play With Me (sped up, reversed)
+define audio.t6s = "<loop 43.572>bgm/6s.ogg" # t6s - Play With Me (slowed down, used during Yuri death scene)
+define audio.t7 = "<loop 2.291>bgm/7.ogg" # t7 - Poem Panic!
+define audio.t7a = "<loop 4.316 to 12.453>bgm/7.ogg" # Unknown, please add issue on GitHub.
+define audio.t7g = "<loop 31.880>bgm/7g.ogg" # t7g - Poem Panic! (rising speed)
+define audio.t8 = "<loop 9.938>bgm/8.ogg" # t8 - Daijoubu!
+define audio.t9 = "<loop 3.172>bgm/9.ogg" # t9 - My Feelings
+define audio.t9g = "<loop 1.532>bgm/9g.ogg" # t9g - My Feelings (sped up)
+define audio.t10 = "<loop 5.861>bgm/10.ogg" # t10 - My Confession
+define audio.t10y = "<loop 0>bgm/10-yuri.ogg" # t10y - My Confession (Yuri, Act 2)
+define audio.td = "<loop 36.782>bgm/d.ogg" # td - Sayo-Nara (with stinger)
 
-define audio.m1 = "<loop 0>bgm/m1.ogg"
-define audio.mend = "<loop 6.424>bgm/monika-end.ogg"
+define audio.m1 = "<loop 0>bgm/m1.ogg" # m1 - Just Monika.
+define audio.mend = "<loop 6.424>bgm/monika-end.ogg" # mend - I Still Love You
 
-define audio.ghostmenu = "<loop 0>bgm/ghostmenu.ogg"
-define audio.g1 = "<loop 0>bgm/g1.ogg"
-define audio.g2 = "<loop 0>bgm/g2.ogg"
-define audio.hb = "<loop 0>bgm/heartbeat.ogg"
+define audio.ghostmenu = "<loop 0>bgm/ghostmenu.ogg" # ghostmenu - Ghost menu and Act 3 Poem game music
+define audio.g1 = "<loop 0>bgm/g1.ogg" # g1 - Glitch sound
+define audio.g2 = "<loop 0>bgm/g2.ogg" # g2 - Longer lower-pitched glitch sound
+define audio.hb = "<loop 0>bgm/heartbeat.ogg" # hb - Heartbeat
 
-define audio.closet_open = "sfx/closet-open.ogg"
-define audio.closet_close = "sfx/closet-close.ogg"
-define audio.page_turn = "sfx/pageflip.ogg"
-define audio.fall = "sfx/fall.ogg"
+define audio.closet_open = "sfx/closet-open.ogg" # closet_open - Closet opening sound
+define audio.closet_close = "sfx/closet-close.ogg" # closet_close - Closet closing sound
+define audio.page_turn = "sfx/pageflip.ogg" # page_turn - Page flipping sound, poem
+define audio.fall = "sfx/fall.ogg" # fall - Falling sound
 
-
-image black = "#000000"
-image dark = "#000000e4"
-image darkred = "#110000c8"
-image white = "#ffffff"
-image splash = "bg/splash.png"
-image end:
+# These define the backgrounds.
+image black = "#000000" # black - Black
+image dark = "#000000e4" # dark - Black, slightly transparent
+image darkred = "#110000c8" # darkred - Black, slight shade of red, slightly transparent
+image white = "#ffffff" # white - White
+image splash = "bg/splash.png" # splash - Team Salvato logo
+image end: # end - Black screen with text, "END"
     truecenter
     "gui/end.png"
-image bg residential_day = "bg/residential.png"
-image bg class_day = "bg/class.png"
-image bg corridor = "bg/corridor.png"
-image bg club_day = "bg/club.png"
-image bg club_day2:
+image bg residential_day = "bg/residential.png" # bg residential_day - Residential
+image bg class_day = "bg/class.png" # bg class_day - Classroom
+image bg corridor = "bg/corridor.png" # bg corridor - School corridor
+image bg club_day = "bg/club.png" # bg club_day - Clubroom
+image bg club_day2: # bg club_day2 - Clubroom, 1 in 6 chance of Sayori hanging picture
     choice:
         "bg club_day"
     choice:
@@ -166,18 +166,18 @@ image bg club_day2:
         "bg club_day"
     choice:
         "bg/club-skill.png"
-image bg closet = "bg/closet.png"
-image bg bedroom = "bg/bedroom.png"
-image bg sayori_bedroom = "bg/sayori_bedroom.png"
-image bg house = "bg/house.png"
-image bg kitchen = "bg/kitchen.png"
+image bg closet = "bg/closet.png" # bg closet - Clubroom closet
+image bg bedroom = "bg/bedroom.png" # bg bedroom - MC's bedroom
+image bg sayori_bedroom = "bg/sayori_bedroom.png" # bg sayori_bedroom - Sayori's bedroom
+image bg house = "bg/house.png" # bg house - Outside Sayori's house
+image bg kitchen = "bg/kitchen.png" # bg kitchen - MC's kitchen
 
-image bg notebook = "bg/notebook.png"
-image bg notebook-glitch = "bg/notebook-glitch.png"
+image bg notebook = "bg/notebook.png" # bg notebook - Poem game notebook
+image bg notebook-glitch = "bg/notebook-glitch.png" # bg notebook-glitch - Poem game notebook, glitched for Act 3
 
-image bg glitch = LiveTile("bg/glitch.jpg")
+image bg glitch = LiveTile("bg/glitch.jpg") # bg glitch - Glitch square
 
-image glitch_color:
+image glitch_color: # Unknown, please add issue on GitHub.
     ytile 3
     zoom 2.5
     parallel:
