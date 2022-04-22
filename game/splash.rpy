@@ -1,3 +1,7 @@
+# splash.rpy
+# This file controls what happens during the game's startup and splash sequence.
+
+# This controls what happens when the appropriate DDLC Ren'Py archives are not present.
 init -100 python:
     for archive in ['audio','images','fonts']:
         if archive not in config.archives:
