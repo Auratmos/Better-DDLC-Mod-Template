@@ -19,10 +19,10 @@ label start:
 
     # This defines the initial names of the four girls.
     # By default, these are...
-    $ s_name = "???" # "???"
-    $ m_name = "Girl 3" # "Girl 3"
-    $ n_name = "Girl 2" # "Girl 2"
-    $ y_name = "Girl 1" # "Girl 1"
+    $ s_name = "???" # "???" - (Sayori)
+    $ m_name = "Girl 3" # "Girl 3" - (Monika)
+    $ n_name = "Girl 2" # "Girl 2" - Natsuki
+    $ y_name = "Girl 1" # "Girl 1" - Yuri
 
     # This determines whether or not the buttons at the bottom of the textbox are visible and the escape button works.
     $ quick_menu = True
@@ -38,7 +38,7 @@ label start:
     $ allow_skipping = True
     $ config.allow_skipping = True
 
-    # Place your code here, or call/jump to another label.
+    # Place your code here, or call/jump to another label (recommended).
     
     
     # This returns the user to the previous label.
