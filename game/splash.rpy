@@ -8,8 +8,9 @@ init -100 python:
             renpy.error("Original game files could not found in the /game folder. The files 'audio.rpa', 'images.rpa' and 'fonts.rpa' must be present for this game to run. Please check your installation of this mod and try again.")
 
 init python:
-    menu_trans_time = 1
-    splash_message_default = "This game is not suitable for children\nor those who are easily disturbed."
+    menu_trans_time = 1 # Unknown, please add issue on GitHub.
+    splash_message_default = "This game is not suitable for children\nor those who are easily disturbed." # This is the default splash message that shows when the game has decided not to use one of the alternate splash messages.
+    # These are the possible alternate splash messages.
     splash_messages = [
     "You are my sunshine,\nMy only sunshine",
     "I missed you.",
