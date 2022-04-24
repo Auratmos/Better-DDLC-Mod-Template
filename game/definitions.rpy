@@ -1339,6 +1339,7 @@ define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc",
 # By default, this is config.developer.
 define _dismiss_pause = config.developer
 
+# These default basic persistent variables.
 default persistent.playername = ""
 default player = persistent.playername
 default persistent.playthrough = 0
