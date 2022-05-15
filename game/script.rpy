@@ -17,12 +17,11 @@ label start:
     # By default, this is config.developer. If a variable = variable, like in this, the first variable will copy the value of the second variable.
     $ _dismiss_pause = config.developer
 
-    # This defines the initial names of the four girls.
-    # By default, these are...
-    $ s_name = "???" # "???" - (Sayori)
-    $ m_name = "Girl 3" # "Girl 3" - (Monika)
-    $ n_name = "Girl 2" # "Girl 2" - (Natsuki)
-    $ y_name = "Girl 1" # "Girl 1" - (Yuri)
+    # This sets the names of the four girls.
+    $ s_name = "Sayori"
+    $ m_name = "Monika"
+    $ n_name = "Natsuki"
+    $ y_name = "Yuri"
 
     # This determines whether or not the buttons at the bottom of the textbox are visible and the escape button works.
     $ quick_menu = True
@@ -38,7 +37,7 @@ label start:
     $ allow_skipping = True
     $ config.allow_skipping = True
 
-    # Place your code here, or call/jump to another label (recommended).
+    # Place your code here, or call/jump to another label in a different file (recommended).
     
     
     # This returns the user to the previous label.

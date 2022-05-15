@@ -1,13 +1,5 @@
-
-
-
-
-
-
-
-
-
-
+# screens.rpy
+# This file contains definitions for most styles and menus.
 
 init -1 style default:
     font gui.default_font
@@ -510,10 +502,8 @@ init -1 style navigation_button_text:
 
 init -501 screen main_menu():
 
-
-
-
-    style_prefix "main_menu" tag menu
+    style_prefix "main_menu"
+    tag menu
 
     if persistent.ghost_menu:
         add "white"

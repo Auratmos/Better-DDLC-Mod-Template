@@ -9,7 +9,7 @@ init -100 python:
 
 init python:
     menu_trans_time = 1 # Unknown, please add issue on GitHub.
-    splash_message_default = "This game is not suitable for children\nor those who are easily disturbed." # This is the default splash message that shows when the game has decided not to use one of the alternate splash messages.
+    splash_message_default = "This is a Doki Doki Literature Club fan game\nthat is not affiliated with Team Salvato." # This is the default splash message that shows when the game has decided not to use one of the alternate splash messages, changed to fit Team Salvato's IP Guidelines.
     # These are the possible alternate splash messages.
     splash_messages = [
     "You are my sunshine,\nMy only sunshine",
@@ -26,6 +26,7 @@ init python:
     "Don't forget to backup Monika's character file."
     ]
 
+# This defines the custom style text to show on the game's startup.
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
 
 image menu_bg:
