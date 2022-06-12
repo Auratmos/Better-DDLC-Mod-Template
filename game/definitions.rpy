@@ -1326,6 +1326,7 @@ image monika g2:
             pause 0.2
     repeat
 
+
 # These define the speaking characters.
 define narrator = Character(ctc="ctc", ctc_position="fixed") # Narrator, MC's thoughts.
 define mc = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed") # MC, the player.

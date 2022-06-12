@@ -1,3 +1,6 @@
+# glitchtext.rpy
+# This file contains the code needed to produce glitchy text seen in Act 2.
+
 init python:
     import random
 
